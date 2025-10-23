@@ -7,7 +7,7 @@ Wazuh is a free, open-source security platform providing log analysis, file inte
 
 Wazuh Manager: Ubuntu (VirtualBox VM) – Collects, analyzes, and stores agent data.
 Wazuh Agent: Windows (host machine) – Forwards logs and system events to the manager.
-Network: Use bridged adapter in VirtualBox for same-network access between host and VM.
+
 
 ## 3. Prerequisites
 
@@ -15,10 +15,10 @@ VirtualBox installed.
 Ubuntu Server 20.04+ installed in VirtualBox with bridged networking.
 Internet access on Ubuntu VM.
 Admin access on Windows host.
-Optional: Basic Linux/system admin knowledge.
+
 
 ## 4. Installing the Wazuh Manager (Ubuntu)
-Run these on the Ubuntu VM terminal.
+Run these commands on the Ubuntu VM terminal.
 4.1 Add Wazuh GPG Key
 curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh-archive-keyring.gpg
 This verifies Wazuh packages.
