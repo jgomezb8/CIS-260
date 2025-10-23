@@ -38,8 +38,7 @@ Log in with credentials shown at script end.
 
 ## 6. Installing the Wazuh Agent (Windows Host)
 
-Download latest MSI from official docs: https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh_agent_windows.html.
-Install MSI on Windows with default settings.
+Download latest MSI from official docs: https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html MSI on Windows with default settings.
 
 ## 7. Registering the Agent with the Manager
 ## 7.1 Generate Agent Key on Ubuntu Manager
