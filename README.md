@@ -41,7 +41,7 @@ Check Ubuntu VM IP: ifconfig (or ip addr show).
 
 <img width="608" height="382" alt="image" src="https://github.com/user-attachments/assets/8d919344-d7a9-496e-b20b-6961b304d9a7" />
 
-Open browser on Ubuntu: https://<ubuntu-vm-ip>.
+Open browser on Ubuntu: https://"ubuntu-vm-ip".
 Accept self-signed certificate warning.
 Log in with credentials shown at script end.
 
