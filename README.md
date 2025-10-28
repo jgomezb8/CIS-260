@@ -12,17 +12,19 @@ Wazuh Agent: Windows (host machine) – Forwards logs and system events to the m
 ## 3. Prerequisites
 
 VirtualBox installed.
-Ubuntu Server 20.04+ installed in VirtualBox with bridged networking.
+Ubuntu Server installed in VirtualBox with bridged networking.
 Internet access on Ubuntu VM.
 Admin access on Windows host.
 
 
 ## 4. Installing the Wazuh Manager (Ubuntu)
 Run these commands on the Ubuntu VM terminal.
-4.1 Add Wazuh GPG Key
-curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh-archive-keyring.gpg
+## 4.1 Add Wazuh GPG Key
+Run on terminal: curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh-archive-keyring.gpg
 This verifies Wazuh packages.
-4.2 Download and Execute Wazuh Installation Script
+<img width="598" height="382" alt="image" src="https://github.com/user-attachments/assets/2fa39960-3775-4938-82fc-b9a77ca8e3fa" />
+
+## 4.2 Download and Execute Wazuh Installation Script
 curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a -i
 
 -a: Installs all components (manager, indexer).
