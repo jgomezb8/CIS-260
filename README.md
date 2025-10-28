@@ -28,6 +28,9 @@ This verifies Wazuh packages.
 ## 4.2 Download and Execute Wazuh Installation Script
 curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a -i
 
+<img width="608" height="382" alt="image" src="https://github.com/user-attachments/assets/4c9edfc6-0467-4d50-9ab9-0e37ba0c7364" />
+
+
 -a: Installs all components (manager, indexer).
 -i: Interactive mode.
 The script handles installation and configuration automatically.
@@ -35,6 +38,9 @@ The script handles installation and configuration automatically.
 ## 5. Accessing the Wazuh Dashboard
 
 Check Ubuntu VM IP: ifconfig (or ip addr show).
+
+<img width="608" height="382" alt="image" src="https://github.com/user-attachments/assets/8d919344-d7a9-496e-b20b-6961b304d9a7" />
+
 Open browser on Ubuntu: https://<ubuntu-vm-ip>.
 Accept self-signed certificate warning.
 Log in with credentials shown at script end.
