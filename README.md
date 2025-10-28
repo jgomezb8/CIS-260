@@ -23,17 +23,23 @@ Run these commands on the Ubuntu VM terminal.
 Run on terminal: curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh-archive-keyring.gpg
 This verifies Wazuh packages.
 
-<img width="598" height="382" alt="image" src="https://github.com/user-attachments/assets/2fa39960-3775-4938-82fc-b9a77ca8e3fa" />
+<img width="656" height="454" alt="image" src="https://github.com/user-attachments/assets/87f29093-20b4-4bb8-b918-1f8b71c4638c" />
+
 
 ## 4.2 Download and Execute Wazuh Installation Script
 curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a -i
 
-<img width="608" height="382" alt="image" src="https://github.com/user-attachments/assets/4c9edfc6-0467-4d50-9ab9-0e37ba0c7364" />
+<img width="642" height="464" alt="image" src="https://github.com/user-attachments/assets/ba1ef9ad-97a2-4212-ad01-76c439263c03" />
 
 
 -a: Installs all components (manager, indexer).
 -i: Interactive mode.
 The script handles installation and configuration automatically.
+
+<img width="642" height="464" alt="image" src="https://github.com/user-attachments/assets/28447923-0a8c-4570-908c-afbaf6c82819" />
+
+
+After installation finalized, save the User and Password given by Wazuh located at the bottom of the installation output under -- Summary --. You will need this information later.
 
 ## 5. Accessing the Wazuh Dashboard
 
