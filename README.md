@@ -22,6 +22,7 @@ Run these commands on the Ubuntu VM terminal.
 ## 4.1 Add Wazuh GPG Key
 Run on terminal: curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh-archive-keyring.gpg
 This verifies Wazuh packages.
+
 <img width="598" height="382" alt="image" src="https://github.com/user-attachments/assets/2fa39960-3775-4938-82fc-b9a77ca8e3fa" />
 
 ## 4.2 Download and Execute Wazuh Installation Script
