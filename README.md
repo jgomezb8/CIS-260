@@ -62,15 +62,25 @@ Log in with credentials shown at script end.
 
 Download latest MSI from official docs: https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-windows.html MSI on Windows with default settings.
 
+<img width="960" height="1044" alt="image" src="https://github.com/user-attachments/assets/91a48075-afae-41f2-9b59-de094fb24995" />
+
+Follow the standard recomendations durring installation of the agent.
+
 ## 7. Registering the Agent with the Manager
 ## 7.1 Generate Agent Key on Ubuntu Manager
 sudo /var/ossec/bin/manage_agents
 
+<img width="642" height="464" alt="image" src="https://github.com/user-attachments/assets/3463fca3-4c05-4e71-8f2b-fb35b640503b" />
+
 Select A to add agent.
 Name it (e.g., WindowsHost).
-Leave IP blank (unless static needed).
+Leave IP of your windows Host (run ipconfig command to get your ip).
+
 Select E to extract key.
 Copy the key.
+
+<img width="642" height="464" alt="image" src="https://github.com/user-attachments/assets/fa8b78e3-b9df-421a-8745-9fea3eee722f" />
+
 
 ## 7.2 Apply Key in the Windows Agent
 
@@ -78,7 +88,13 @@ Open Wazuh Agent Manager GUI from Start Menu.
 Paste key into field.
 Save and apply.
 Add manager's IP (Ubuntu VM IP).
-Restart agent service.
+
+<img width="320" height="254" alt="image" src="https://github.com/user-attachments/assets/061d05a7-c260-4961-9235-3a232e9524c6" />
+
+Restart agent service on Manage > Restart.
+
+<img width="318" height="254" alt="image" src="https://github.com/user-attachments/assets/45a85aaf-2227-438c-8cf8-fe751b3e0cb4" />
+
 Agent should appear in Wazuh dashboard.
 
 
