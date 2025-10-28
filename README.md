@@ -36,20 +36,27 @@ curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-i
 -i: Interactive mode.
 The script handles installation and configuration automatically.
 
+After installation finalized, save the User and Password given by Wazuh located at the bottom of the installation output under -- Summary --. You will need this information later.
+
 <img width="642" height="464" alt="image" src="https://github.com/user-attachments/assets/28447923-0a8c-4570-908c-afbaf6c82819" />
 
-
-After installation finalized, save the User and Password given by Wazuh located at the bottom of the installation output under -- Summary --. You will need this information later.
 
 ## 5. Accessing the Wazuh Dashboard
 
 Check Ubuntu VM IP: ifconfig (or ip addr show).
 
-<img width="608" height="382" alt="image" src="https://github.com/user-attachments/assets/8d919344-d7a9-496e-b20b-6961b304d9a7" />
+<img width="642" height="464" alt="image" src="https://github.com/user-attachments/assets/168c107f-4092-4a88-85f7-d70d0d642c9b" />
+
 
 Open browser on Ubuntu: https://"ubuntu-vm-ip".
 Accept self-signed certificate warning.
+
+<img width="642" height="464" alt="image" src="https://github.com/user-attachments/assets/1740fa99-d314-4f60-acff-a30c942b250a" />
+
 Log in with credentials shown at script end.
+
+<img width="642" height="464" alt="image" src="https://github.com/user-attachments/assets/f18be4be-7578-4b7b-95ef-a254e05a5451" />
+
 
 ## 6. Installing the Wazuh Agent (Windows Host)
 
