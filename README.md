@@ -105,3 +105,10 @@ Go to Agents: Confirm Windows agent listed as Active.
 Go to Integrity Monitoring section.
 In monitored folder (e.g., C:\Users<your-username>\Test), create/modify/delete files.
 Check dashboard for alerts.
+
+
+## 9. Testing the SIEM
+
+on Linux, run the following 
+
+sudo cp /etc/passwd /etc/passwd.bak && sudo echo "hacker:x:999:999::/tmp:/bin/sh" >> /etc/passwd
