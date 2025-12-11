@@ -112,3 +112,5 @@ Check dashboard for alerts.
 on Linux, run the following 
 
 sudo cp /etc/passwd /etc/passwd.bak && sudo echo "hacker:x:999:999::/tmp:/bin/sh" >> /etc/passwd
+
+sudo touch /bin/hacker-test && sudo echo "fake malicious file" > /bin/hacker-test
