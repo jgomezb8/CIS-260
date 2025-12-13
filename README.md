@@ -97,20 +97,38 @@ Restart agent service on Manage > Restart.
 
 Agent should appear in Wazuh dashboard.
 
+## 7.3 (optional) Create a second agent for testing in a Linux OS
+
+Open the wazuh dashboard website
+Click on deploy a new agent
+Fill the necessary spaces with IP address of the new agent, OS and desire name for it.
+Copy the tailored command the dashboard gives you
+Paste it on the Linux terminal and run it
+
+<img width="827" height="797" alt="image" src="https://github.com/user-attachments/assets/170fb209-0f65-4175-a600-578b84e60680" />
+<img width="827" height="797" alt="image" src="https://github.com/user-attachments/assets/a7a70db4-aa1e-4e7e-92b9-1f254c4d2928" />
+
+Agent should appear in Wazuh dashboard.
 
 ## 8. Verifying Setup
 
 Open Wazuh dashboard in browser.
 Go to Agents: Confirm Windows agent listed as Active.
-Go to Integrity Monitoring section.
-In monitored folder (e.g., C:\Users<your-username>\Test), create/modify/delete files.
-Check dashboard for alerts.
+
+<img width="1115" height="869" alt="image" src="https://github.com/user-attachments/assets/513c13c0-d659-4810-b882-cf70d767d9a9" />
 
 
 ## 9. Testing the SIEM
 
-on Linux, run the following 
+on the Linux agent , run the following 
 
-sudo cp /etc/passwd /etc/passwd.bak && sudo echo "hacker:x:999:999::/tmp:/bin/sh" >> /etc/passwd
+sudo apt update
+sudo apt install -y apache2
+sudo systemctl start apache2
 
-sudo touch /bin/hacker-test && sudo echo "fake malicious file" > /bin/hacker-test
+<img width="744" height="339" alt="image" src="https://github.com/user-attachments/assets/baf0441d-91f4-43de-a560-51192040f50f" />
+
+Wait 30 minutes and check our SIEM dashboard and look how the vulnerability detection section is filled with alerts of the system.
+
+<img width="1076" height="797" alt="image" src="https://github.com/user-attachments/assets/f87c4e27-1b09-4837-9323-d2459072249e" />
+
